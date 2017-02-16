@@ -68,6 +68,7 @@ def Broyden(func,x0,B0,tol,tol_rel,Nmax,args,WarnM=False):
 				warnings.warn('Max number of iterations; no convergence')
 			boucle=1
 			B=B00
+			Nite=N
 		N+=1
 
 	return x,B,Nite
